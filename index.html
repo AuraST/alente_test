@@ -4,51 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой костюм - сеть ателье</title>
-    <link href="styles/normalize.css" rel="stylesheets">
-    <link href="styles/base.css" rel="stylesheets">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="header-person">
-            <ul class="header-person__socials socials">
-                <li class="socials-item">
-                    <a class="socials-item__link socials-item__link--facebook" href="#" aria-label="Ссылка на Facebook"></a>
-                </li>
-                <li class="socials-item">
-                    <a class="socials-item__link socials-item__link--vk" href="#" aria-label="Ссылка на VK"></a>
-                </li>
-                <li class="socials-item">
-                    <a class="socials-item__link socials-item__link--twitter" href="#" aria-label="Ссылка на Twitter"></a>
-                </li>
-                <li class="socials-item">
-                    <a class="socials-item__link socials-item__link--google" href="#" aria-label="Ссылка на Google+"></a>
-                </li>
-            </ul>
-            <form class="header-person__regions" name="choose-region" action="#" method="GET">
-                <label class="visually-hidden" for="region-list">Выберите город</label>
-                <select class="region-list" id="region-list" name="region-list">
-                    <option class="region-item" value="Москва" selected>Москва</option>
-                    <option class="region-item" value="Спб">Санкт-Петербург</option>
-                </select>
-            </form>
-            <a class="header-person__phone" href="tel:+74992401001">+7 (499) 240-10-01</a>
-            <a class="header-person__auth" href="#">Войти</a>
-            <div class="header-person__backet backet">
-                <a class="backet-link" href="#">Корзина</a>
-                <span class="backet-count">| 3</span>
+            <div class="container header-person__inner">
+                <ul class="header-person__socials socials">
+                    <li class="socials-item">
+                        <a class="socials-item__link socials-item__link--facebook" href="#" aria-label="Ссылка на Facebook"></a>
+                    </li>
+                    <li class="socials-item">
+                        <a class="socials-item__link socials-item__link--vk" href="#" aria-label="Ссылка на VK"></a>
+                    </li>
+                    <li class="socials-item">
+                        <a class="socials-item__link socials-item__link--twitter" href="#" aria-label="Ссылка на Twitter"></a>
+                    </li>
+                    <li class="socials-item">
+                        <a class="socials-item__link socials-item__link--google" href="#" aria-label="Ссылка на Google+"></a>
+                    </li>
+                </ul>
+                <form class="header-person__regions" name="choose-region" action="#" method="GET">
+                    <label class="visually-hidden" for="region-list">Выберите город</label>
+                    <select class="region-list" id="region-list" name="region-list">
+                        <option class="region-item" value="Москва" selected>Москва</option>
+                        <option class="region-item" value="Спб">Санкт-Петербург</option>
+                    </select>
+                </form>
+                <a class="header-person__phone" href="tel:+74992401001">+7 (499) 240-10-01</a>
+                <a class="header-person__auth" href="#">Войти</a>
+                <div class="header-person__backet backet">
+                    <a class="backet__link" href="#">Корзина</a>
+                    <span class="backet__count">| 3</span>
+                </div>
             </div>
         </div>
         <div class="header-nav">
-            <a class="header-nav__logo" href="#" aria-label="Ссылка на главную страницу">
-                <img src="images/logo.png" alt="Логотип">
-            </a>
-            <nav class="header-nav__menu header-menu">
-                <a class="header-menu__link active">Пошив одежды</a>
-                <a class="header-menu__link" href="#">Интернет магазин</a>
-                <a class="header-menu__link" href="#">О магазине</a>
-                <a class="header-menu__link" href="#">Блог</a>
-                <a class="header-menu__link" href="#">Контакты</a>
-            </nav>
+            <div class="container">
+                <a class="header-nav__logo" href="#" aria-label="Ссылка на главную страницу">
+                    <img src="images/logo.png" alt="Логотип">
+                </a>
+                <nav class="header-nav__menu header-menu">
+                    <a class="header-menu__link active">Пошив одежды</a>
+                    <a class="header-menu__link" href="#">Интернет магазин</a>
+                    <a class="header-menu__link" href="#">О магазине</a>
+                    <a class="header-menu__link" href="#">Блог</a>
+                    <a class="header-menu__link" href="#">Контакты</a>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -59,7 +63,7 @@
                     <p class="hero-content__text">
                         Мода - Вопрос Денег.
                     </p>
-                    <p class="hero-content__text">
+                    <p class="hero-content__text text--bold">
                         Стиль - Вопрос Индивидуальности.
                     </p>
                 </div>

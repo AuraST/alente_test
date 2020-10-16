@@ -1,0 +1,138 @@
+.header-person__phone {
+    font-size: 1.214rem;
+    font-weight: 500;
+}
+
+.header-person__auth {
+    font-size: 1.071rem;
+    font-weight: 500;
+}
+
+.header-person__backet .backet__link {
+    font-size: 1.071rem;
+    font-weight: 500;
+}
+
+.header-person__backet .backet__count {
+    color: var(--color-default);
+}
+
+.header-menu .header-menu__link {
+    font-family: "ProximaNovaCond", sans-serif;
+    font-size: 1.071rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.header-menu .header-menu__link.active {
+    border-bottom: 1px dashed var(--color-light);
+}
+
+.hero-content__text {
+    font-size: 3.429rem;
+}
+
+.blog-filter .category {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.blog-filter .category:hover {
+    color: var(--color-default);
+    border: 1px solid var(--color-default);
+}
+
+.article {
+    text-align: center;
+}
+
+.article .article__title {
+    font-size: 1.571;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.article .article__brand {
+    font-family: "Georgia", serif;
+    font-size: 1.571;
+}
+
+.article .article__desc {
+    font-size: 0.857rem;
+    text-transform: uppercase;
+}
+
+.tailoring-content {
+    font-size: 1.714rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.tailoring-content__title {
+    font-family: "Georgia Italic", serif;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: none;
+}
+
+.tailoring__result {
+    font-family: "Georgia Italic", serif;
+    font-size: 1.429rem;
+}
+
+/* Блок "Запись на примерку" */
+.book-fitting__title {
+    font-size: 1.857rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.book-fitting__desc {
+    font-size: 1.429rem;
+}
+
+.form-fitting__field .label {
+    font-family: "Georgia Italic", serif;
+    font-size: 0.929rem;
+}
+
+.form-fitting__btn {
+    font-size: 1.286rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Футер */
+.footer-menu .footer-menu__link {
+    font-weight: 500;
+    color: var(--color-default);
+    text-transform: uppercase;
+}
+
+.footer-categories .footer-categories__link {
+    font-size: 1.071rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #4c4c4c;
+}
+
+.footer-address .footer-address__title {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-address .footer-address__link[href^="tel:"] {
+    font-weight: 700;
+}
+
+.footer-address .footer-address__link[href^="mailto:"] {
+    color: var(--color-default);
+}
+
+.footer-copyright .footer-copyright__text {
+    font-size: 0.857rem;
+    color: #828181;
+}
