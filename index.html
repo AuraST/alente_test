@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой костюм - сеть ателье</title>
+    <link href="styles/normalize.css" rel="stylesheets">
+    <link href="styles/base.css" rel="stylesheets">
+</head>
+<body>
+    <header class="header">
+        <div class="header-person">
+            <ul class="header-person__socials socials">
+                <li class="socials-item">
+                    <a class="socials-item__link socials-item__link--facebook" href="#" aria-label="Ссылка на Facebook"></a>
+                </li>
+                <li class="socials-item">
+                    <a class="socials-item__link socials-item__link--vk" href="#" aria-label="Ссылка на VK"></a>
+                </li>
+                <li class="socials-item">
+                    <a class="socials-item__link socials-item__link--twitter" href="#" aria-label="Ссылка на Twitter"></a>
+                </li>
+                <li class="socials-item">
+                    <a class="socials-item__link socials-item__link--google" href="#" aria-label="Ссылка на Google+"></a>
+                </li>
+            </ul>
+            <form class="header-person__regions" name="choose-region" action="#" method="GET">
+                <label class="visually-hidden" for="region-list">Выберите город</label>
+                <select class="region-list" id="region-list" name="region-list">
+                    <option class="region-item" value="Москва" selected>Москва</option>
+                    <option class="region-item" value="Спб">Санкт-Петербург</option>
+                </select>
+            </form>
+            <a class="header-person__phone" href="tel:+74992401001">+7 (499) 240-10-01</a>
+            <a class="header-person__auth" href="#">Войти</a>
+            <div class="header-person__backet backet">
+                <a class="backet-link" href="#">Корзина</a>
+                <span class="backet-count">| 3</span>
+            </div>
+        </div>
+        <div class="header-nav">
+            <a class="header-nav__logo" href="#" aria-label="Ссылка на главную страницу">
+                <img src="images/logo.png" alt="Логотип">
+            </a>
+            <nav class="header-nav__menu header-menu">
+                <a class="header-menu__link active">Пошив одежды</a>
+                <a class="header-menu__link" href="#">Интернет магазин</a>
+                <a class="header-menu__link" href="#">О магазине</a>
+                <a class="header-menu__link" href="#">Блог</a>
+                <a class="header-menu__link" href="#">Контакты</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="visually-hidden">Мой костюм - сеть ателье</h1>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-content__text">
+                        Мода - Вопрос Денег.
+                    </p>
+                    <p class="hero-content__text">
+                        Стиль - Вопрос Индивидуальности.
+                    </p>
+                </div>
+                <div class="hero-img">
+                    <img src="images/#" alt="Мужчина в пиджаке">
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <h2 class="visually-hidden">Статьи из блога</h2>
+            <div class="container">
+                <form class="blog-filter" name="blog-filter" action="#" method="GET">
+                    <label class="category">
+                        <input class="visually-hidden" type="radio" name="category" value="Костюмы">
+                        <span class="category__name">Костюмы</span>
+                    </label>
+                    <label class="category">
+                        <input class="visually-hidden" type="radio" name="category" value="Сорочки">
+                        <span class="category__name">Сорочки</span>
+                    </label>
+                    <label class="category">
+                        <input class="visually-hidden" type="radio" name="category" value="Пальто">
+                        <span class="category__name">Пальто</span>
+                    </label>
+                    <label class="category">
+                        <input class="visually-hidden" type="radio" name="category" value="Обувь">
+                        <span class="category__name">Обувь</span>
+                    </label>
+                    <label class="category">
+                        <input class="visually-hidden" type="radio" name="category" value="Запонки">
+                        <span class="category__name">Запонки</span>
+                    </label>
+                    <label class="category">
+                        <input class="visually-hidden" type="radio" name="category" value="Галстуки">
+                        <span class="category__name">Галстуки</span>
+                    </label>
+                    <label class="category">
+                        <input class="visually-hidden" type="radio" name="category" value="Джинсы">
+                        <span class="category__name">Джинсы</span>
+                    </label>
+                    <label class="category">
+                        <input class="visually-hidden" type="radio" name="category" value="Нижнее белье">
+                        <span class="category__name">Нижнее белье</span>
+                    </label>
+                    <label class="category">
+                        <input class="visually-hidden" type="radio" name="category" value="Кепки">
+                        <span class="category__name">Кепки</span>
+                    </label>
+                </form>
+                <div class="blog-articles">
+                    <div class="article" style="background-image: url(images/jacket-back-1.png);">
+                        <p class="article__title">Однобортный пиджак</p>
+                        <p class="article__brand">Louis Purple</p>
+                        <p class="article__desc">Коллекция Весна/Лето 2015.</p>
+                    </div>
+                    <div class="article" style="background-image: url(images/jacket-back-2.png);">
+                        <p class="article__title">Пиджак и жилет</p>
+                        <p class="article__brand">Louis Purple</p>
+                        <p class="article__desc">Коллекция Весна/Лето 2015.</p>
+                    </div>
+                    <div class="article" style="background-image: url(images/shirt-back.png);">
+                        <p class="article__desc article__desc--back">
+                            Процесс создания Вашей 
+                            будущей сорочки – 
+                            это наше совместное 
+                            творчество
+                        </p>
+                    </div>
+                    <div class="article" style="background-image: url(images/shoes-back.png);">
+                        <p class="article__title">Готовая обувь</p>
+                        <p class="article__brand">
+                            Lo White 
+                            и 
+                            Castori</p>
+                        <a class="btn btn--default" href="#">Пошив обуви на заказ</a>
+                    </div>
+                    <div class="article" style="background-image: url(images/jacket-back-2.png);">
+                        <p class="article__title">Запонки</p>
+                        <p class="article__brand">Tateossian</p>
+                        <p class="article__desc">известный английский производитель аксессуаров.</p>
+                    </div>
+                    <div class="article" style="background-image: url(images/jacket-back-2.png);">
+                        <div class="article__tag">
+                            <span class="article__tag-text">Блог</span>
+                        </div>
+                        <p class="article__title">Связать воедино: выбираем шарф!</p>
+                        <p class="article__date">30 октября | 2015</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tailoring">
+            <div class="container">
+                <p class="tailoring-content">
+                    <span class="tailoring-content__title">Пошив костюма на заказ -</span>
+                    4-5 недель за готовый костюм,
+                    <span class="text--bold">сшитый персонально для Вас</span>
+                </p>
+                <p class="tailoring__result">
+                    Готовый костюм - 1-2 дня
+                </p>
+            </div>
+        </section>
+        <section class="brands">
+            <div class="container">
+                <ul class="brands__list">
+                    <li class="brands__item">
+                        <img src="images/logo-resolute.png" alt="Логотип бренда Resolute">
+                    </li>
+                    <li class="brands__item">
+                        <img src="images/logo-castori.png" alt="Логотип бренда Castori">
+                    </li>
+                    <li class="brands__item">
+                        <img src="images/logo-tateossian.png" alt="Логотип бренда Tateossian">
+                    </li>
+                    <li class="brands__item">
+                        <img src="images/logo-milano.png" alt="Логотип бренда Milano">
+                    </li>
+                    <li class="brands__item">
+                        <img src="images/logo-lo-white.png" alt="Логотип бренда Lo.White">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="book-fitting">
+            <div class="container">
+                <h3 class="book-fitting__title">Записаться на примерку</h3>
+                <p class="book-fitting__desc">Когда и во сколько вам удобно подъехать для снятие мерок?</p>
+                <form class="book-fitting__form form-fitting" name="book-fitting" action="#" method="GET">
+                    <fieldset class="form-fitting__field">
+                        <legend class="visually-hidden">Выбор дня и времени</legend>
+                        <div>
+                            <label for="book-fitting-date">Выберите день</label>
+                            <select class="form-fitting__select form-fitting__select--day" id="book-fitting-day" name="book-fitting-day">
+                                <option value="07 ноября" selected>07 ноября</option>
+                                <option value="08 ноября">08 ноября</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="book-fitting-time">Выберите время</label>
+                            <select class="form-fitting__select form-fitting__select--time" id="book-fitting-time" name="book-fitting-time">
+                                <option value="16:30" selected>16:30</option>
+                                <option value="09:00">09:00</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-fitting__field">
+                        <legend class="visually-hidden">Выбор ателье</legend>
+                        <div>
+                            <label for="book-fitting-address">Адрес ателье</label>
+                            <select class="form-fitting__select form-fitting__select--address" id="book-fitting-address" name="book-fitting-address">
+                                <option value="ул.Марта" selected>ул. Марта (Санкт-Петербург)</option>
+                                <option value="ул.Апреля">ул. Апреля (Москва)</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-fitting__field">
+                        <legend class="visually-hidden">Имя заказчика</legend>
+                        <div>
+                            <label for="book-fitting-address">Представтесь пожалуйста</label>
+                            <input class="form-fitting__input form-fitting__input--name" id="book-fitting-name" name="book-fitting-name" type="text" placeholder="Напишите свое имя">
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-fitting__field">
+                        <legend class="visually-hidden">Контакты заказчика</legend>
+                        <div>
+                            <label for="book-fitting-address">Ваш контактный телефон</label>
+                            <input class="form-fitting__input form-fitting__input--phone" id="book-fitting-phone" name="book-fitting-phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7 850 345 789 12">
+                        </div>
+                    </fieldset>
+                    <button class="btn form-fitting__btn" type="submit">Записаться</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <nav class="footer-menu">
+                    <a class="footer-menu__link" href="#">Пошив одежды</a>
+                    <a class="footer-menu__link" href="#">Интернет магазин</a>
+                    <a class="footer-menu__link" href="#">О магазине</a>
+                    <a class="footer-menu__link" href="#">Блог</a>
+                    <a class="footer-menu__link" href="#">Контакты</a>
+                </nav>
+                <nav class="footer-categories">
+                    <a class="footer-categories__link" href="#">Костюмы</a>
+                    <a class="footer-categories__link" href="#">Сорочки</a>
+                    <a class="footer-categories__link" href="#">Пальто</a>
+                    <a class="footer-categories__link" href="#">Обувь</a>
+                    <a class="footer-categories__link" href="#">Запонки</a>
+                    <a class="footer-categories__link" href="#">Галстуки</a>
+                    <a class="footer-categories__link" href="#">Джинсы</a>
+                    <a class="footer-categories__link" href="#">Нижнее белье</a>
+                    <a class="footer-categories__link" href="#">Кепки</a>
+                </nav>
+                <div class="footer-address">
+                    <address>
+                        <p class="footer-address__title">Контакты</p>
+                        <p>Адрес: Студенческая улица, 20</p>
+                        <p>тел: <a class="footer-address__link" href="tel:+7 (499) 240-10-01">+7 (499) 240-10-01</a></p>
+                        <p>e-mail: <a class="footer-address__link" href="mailto:info@my-suit.ru">info@my-suit.ru</a></p>
+                    </address>
+                    <ul class="socials socials--gold">
+                        <li class="socials-item">
+                            <a class="socials-item__link socials-item__link--facebook" href="#" aria-label="Ссылка на Facebook"></a>
+                        </li>
+                        <li class="socials-item">
+                            <a class="socials-item__link socials-item__link--vk" href="#" aria-label="Ссылка на VK"></a>
+                        </li>
+                        <li class="socials-item">
+                            <a class="socials-item__link socials-item__link--twitter" href="#" aria-label="Ссылка на Twitter"></a>
+                        </li>
+                        <li class="socials-item">
+                            <a class="socials-item__link socials-item__link--google" href="#" aria-label="Ссылка на Google+"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p class="footer-copyright__text">Copywrite Еtrusci, Ltd 2015-2016 All rihghts preserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
