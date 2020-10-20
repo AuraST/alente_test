@@ -34,3 +34,21 @@ a {
 .text--bold {
     font-weight: 700;
 }
+
+.btn {
+    display: block;
+    padding: 15px;
+    text-transform: uppercase;
+    background-color: transparent
+}
+
+.btn--default {
+    margin: 20px auto 0 auto;
+    width: max-content;
+    border: 2px solid var(--color-white);
+}
+
+.btn--default:hover {
+    background-color: var(--color-white);
+    color: var(--color-default);
+}
