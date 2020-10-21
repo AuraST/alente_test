@@ -10,33 +10,35 @@
 <body>
     <header class="header">
         <div class="header-person">
-            <div class="container header-person__inner">
-                <ul class="header-person__socials socials">
-                    <li class="socials-item">
-                        <a class="socials-item__link socials-item__link--facebook" href="#" aria-label="Ссылка на Facebook"></a>
-                    </li>
-                    <li class="socials-item">
-                        <a class="socials-item__link socials-item__link--vk" href="#" aria-label="Ссылка на VK"></a>
-                    </li>
-                    <li class="socials-item">
-                        <a class="socials-item__link socials-item__link--twitter" href="#" aria-label="Ссылка на Twitter"></a>
-                    </li>
-                    <li class="socials-item">
-                        <a class="socials-item__link socials-item__link--google" href="#" aria-label="Ссылка на Google+"></a>
-                    </li>
-                </ul>
-                <form class="header-person__regions" name="choose-region" action="#" method="GET">
-                    <label class="visually-hidden" for="region-list">Выберите город</label>
-                    <select class="region-list" id="region-list" name="region-list">
-                        <option class="region-item" value="Москва" selected>Москва</option>
-                        <option class="region-item" value="Спб">Санкт-Петербург</option>
-                    </select>
-                </form>
-                <a class="header-person__phone" href="tel:+74992401001">+7 (499) 240-10-01</a>
-                <a class="header-person__auth" href="#">Войти</a>
-                <div class="header-person__backet backet">
-                    <a class="backet__link" href="#">Корзина</a>
-                    <span class="backet__count">| 3</span>
+            <div class="container">
+                <div class="header-person__inner">
+                    <ul class="header-person__socials socials">
+                        <li class="socials-item">
+                            <a class="socials-item__link socials-item__link--facebook" href="#" aria-label="Ссылка на Facebook"></a>
+                        </li>
+                        <li class="socials-item">
+                            <a class="socials-item__link socials-item__link--vk" href="#" aria-label="Ссылка на VK"></a>
+                        </li>
+                        <li class="socials-item">
+                            <a class="socials-item__link socials-item__link--twitter" href="#" aria-label="Ссылка на Twitter"></a>
+                        </li>
+                        <li class="socials-item">
+                            <a class="socials-item__link socials-item__link--google" href="#" aria-label="Ссылка на Google+"></a>
+                        </li>
+                    </ul>
+                    <form class="header-person__regions" name="choose-region" action="#" method="GET">
+                        <label class="visually-hidden" for="region-list">Выберите город</label>
+                        <select class="region-list" id="region-list" name="region-list">
+                            <option class="region-item" value="Москва" selected>Москва</option>
+                            <option class="region-item" value="Спб">Санкт-Петербург</option>
+                        </select>
+                    </form>
+                    <a class="header-person__phone" href="tel:+74992401001">+7 (499) 240-10-01</a>
+                    <a class="header-person__auth" href="#">Войти</a>
+                    <div class="header-person__backet backet">
+                        <a class="backet__link" href="#">Корзина</a>
+                        <span class="backet__count">| 3</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,7 +81,7 @@
             <div class="container">
                 <form class="blog-filter" name="blog-filter" action="#" method="GET">
                     <label class="category">
-                        <input class="visually-hidden" type="radio" name="category" value="Костюмы">
+                        <input class="visually-hidden" type="radio" name="category" value="Костюмы" checked>
                         <span class="category__name">Костюмы</span>
                     </label>
                     <label class="category">
@@ -157,12 +159,12 @@
         <section class="tailoring">
             <div class="container">
                 <p class="tailoring-content">
-                    <span class="tailoring-content__title">Пошив костюма на заказ -</span>
-                    4-5 недель за готовый костюм,
+                    <span class="tailoring-content__title">Пошив костюма на&nbsp;заказ&nbsp; -</span><br>
+                    4-5 недель за&nbsp;готовый костюм,<br>
                     <span class="text--bold">сшитый персонально для Вас</span>
                 </p>
                 <p class="tailoring__result">
-                    Готовый костюм - 1-2 дня
+                    Готовый костюм&nbsp;&mdash; 1-2 дня
                 </p>
             </div>
         </section>
@@ -189,100 +191,108 @@
         </section>
         <section class="book-fitting">
             <div class="container">
-                <h3 class="book-fitting__title">Записаться на примерку</h3>
-                <p class="book-fitting__desc">Когда и во сколько вам удобно подъехать для снятие мерок?</p>
+                <div class="book-fitting__header">
+                    <h3 class="book-fitting__title">Записаться на примерку</h3>
+                    <p class="book-fitting__desc">Когда и во сколько вам удобно подъехать для снятие мерок?</p>
+                </div>
                 <form class="book-fitting__form form-fitting" name="book-fitting" action="#" method="GET">
-                    <fieldset class="form-fitting__field">
-                        <legend class="visually-hidden">Выбор дня и времени</legend>
-                        <div>
-                            <label for="book-fitting-date">Выберите день</label>
-                            <select class="form-fitting__select form-fitting__select--day" id="book-fitting-day" name="book-fitting-day">
-                                <option value="07 ноября" selected>07 ноября</option>
-                                <option value="08 ноября">08 ноября</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="book-fitting-time">Выберите время</label>
-                            <select class="form-fitting__select form-fitting__select--time" id="book-fitting-time" name="book-fitting-time">
-                                <option value="16:30" selected>16:30</option>
-                                <option value="09:00">09:00</option>
-                            </select>
-                        </div>
-                    </fieldset>
-                    <fieldset class="form-fitting__field">
-                        <legend class="visually-hidden">Выбор ателье</legend>
-                        <div>
-                            <label for="book-fitting-address">Адрес ателье</label>
-                            <select class="form-fitting__select form-fitting__select--address" id="book-fitting-address" name="book-fitting-address">
-                                <option value="ул.Марта" selected>ул. Марта (Санкт-Петербург)</option>
-                                <option value="ул.Апреля">ул. Апреля (Москва)</option>
-                            </select>
-                        </div>
-                    </fieldset>
-                    <fieldset class="form-fitting__field">
-                        <legend class="visually-hidden">Имя заказчика</legend>
-                        <div>
-                            <label for="book-fitting-address">Представтесь пожалуйста</label>
-                            <input class="form-fitting__input form-fitting__input--name" id="book-fitting-name" name="book-fitting-name" type="text" placeholder="Напишите свое имя">
-                        </div>
-                    </fieldset>
-                    <fieldset class="form-fitting__field">
-                        <legend class="visually-hidden">Контакты заказчика</legend>
-                        <div>
-                            <label for="book-fitting-address">Ваш контактный телефон</label>
-                            <input class="form-fitting__input form-fitting__input--phone" id="book-fitting-phone" name="book-fitting-phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7 850 345 789 12">
-                        </div>
-                    </fieldset>
+                    <div class="form-fitting__inner">
+                        <fieldset class="form-fitting__field">
+                            <legend class="visually-hidden">Выбор дня и времени</legend>
+                            <div>
+                                <label for="book-fitting-date">Выберите день</label>
+                                <select class="form-fitting__select form-fitting__select--day" id="book-fitting-day" name="book-fitting-day">
+                                    <option value="07 ноября" selected>07 ноября</option>
+                                    <option value="08 ноября">08 ноября</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="book-fitting-time">Выберите время</label>
+                                <select class="form-fitting__select form-fitting__select--time" id="book-fitting-time" name="book-fitting-time">
+                                    <option value="16:30" selected>16:30</option>
+                                    <option value="09:00">09:00</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-fitting__field">
+                            <legend class="visually-hidden">Выбор ателье</legend>
+                            <div>
+                                <label for="book-fitting-address">Адрес ателье</label>
+                                <select class="form-fitting__select form-fitting__select--address" id="book-fitting-address" name="book-fitting-address">
+                                    <option value="ул.Марта" selected>ул. Марта (Санкт-Петербург)</option>
+                                    <option value="ул.Апреля">ул. Апреля (Москва)</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-fitting__field">
+                            <legend class="visually-hidden">Имя заказчика</legend>
+                            <div>
+                                <label for="book-fitting-address">Представтесь пожалуйста</label>
+                                <input class="form-fitting__input form-fitting__input--name" id="book-fitting-name" name="book-fitting-name" type="text" placeholder="Напишите свое имя">
+                            </div>
+                        </fieldset>
+                        <fieldset class="form-fitting__field">
+                            <legend class="visually-hidden">Контакты заказчика</legend>
+                            <div>
+                                <label for="book-fitting-address">Ваш контактный телефон</label>
+                                <input class="form-fitting__input form-fitting__input--phone" id="book-fitting-phone" name="book-fitting-phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7 850 345 789 12">
+                            </div>
+                        </fieldset>
+                    </div>
                     <button class="btn form-fitting__btn" type="submit">Записаться</button>
                 </form>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="footer-links">
-                <nav class="footer-menu">
-                    <a class="footer-menu__link" href="#">Пошив одежды</a>
-                    <a class="footer-menu__link" href="#">Интернет магазин</a>
-                    <a class="footer-menu__link" href="#">О магазине</a>
-                    <a class="footer-menu__link" href="#">Блог</a>
-                    <a class="footer-menu__link" href="#">Контакты</a>
-                </nav>
-                <nav class="footer-categories">
-                    <a class="footer-categories__link" href="#">Костюмы</a>
-                    <a class="footer-categories__link" href="#">Сорочки</a>
-                    <a class="footer-categories__link" href="#">Пальто</a>
-                    <a class="footer-categories__link" href="#">Обувь</a>
-                    <a class="footer-categories__link" href="#">Запонки</a>
-                    <a class="footer-categories__link" href="#">Галстуки</a>
-                    <a class="footer-categories__link" href="#">Джинсы</a>
-                    <a class="footer-categories__link" href="#">Нижнее белье</a>
-                    <a class="footer-categories__link" href="#">Кепки</a>
-                </nav>
-                <div class="footer-address">
-                    <address>
-                        <p class="footer-address__title">Контакты</p>
-                        <p>Адрес: Студенческая улица, 20</p>
-                        <p>тел: <a class="footer-address__link" href="tel:+7 (499) 240-10-01">+7 (499) 240-10-01</a></p>
-                        <p>e-mail: <a class="footer-address__link" href="mailto:info@my-suit.ru">info@my-suit.ru</a></p>
-                    </address>
-                    <ul class="socials socials--gold">
-                        <li class="socials-item">
-                            <a class="socials-item__link socials-item__link--facebook" href="#" aria-label="Ссылка на Facebook"></a>
-                        </li>
-                        <li class="socials-item">
-                            <a class="socials-item__link socials-item__link--vk" href="#" aria-label="Ссылка на VK"></a>
-                        </li>
-                        <li class="socials-item">
-                            <a class="socials-item__link socials-item__link--twitter" href="#" aria-label="Ссылка на Twitter"></a>
-                        </li>
-                        <li class="socials-item">
-                            <a class="socials-item__link socials-item__link--google" href="#" aria-label="Ссылка на Google+"></a>
-                        </li>
-                    </ul>
+        <div class="footer-links">
+            <div class="container">
+                <div class="footer-links__inner">
+                    <nav class="footer-menu">
+                        <a class="footer-menu__link" href="#">Пошив одежды</a>
+                        <a class="footer-menu__link" href="#">Каталог</a>
+                        <a class="footer-menu__link" href="#">О магазине</a>
+                        <a class="footer-menu__link" href="#">Блог</a>
+                        <a class="footer-menu__link" href="#">Партнерам</a>
+                    </nav>
+                    <nav class="footer-categories">
+                        <a class="footer-categories__link" href="#">Костюмы</a>
+                        <a class="footer-categories__link" href="#">Сорочки</a>
+                        <a class="footer-categories__link" href="#">Пальто</a>
+                        <a class="footer-categories__link" href="#">Обувь</a>
+                        <a class="footer-categories__link" href="#">Запонки</a>
+                        <a class="footer-categories__link" href="#">Галстуки</a>
+                        <a class="footer-categories__link" href="#">Джинсы</a>
+                        <a class="footer-categories__link" href="#">Нижнее белье</a>
+                        <a class="footer-categories__link" href="#">Кепки</a>
+                    </nav>
+                    <div class="footer-address">
+                        <address class="footer-address__info">
+                            <p class="footer-address__title">Контакты</p>
+                            <p>Адрес: Студенческая улица, 20</p>
+                            <p>тел: <a class="footer-address__link" href="tel:+7 (499) 240-10-01">+7 (499) 240-10-01</a></p>
+                            <p>e-mail: <a class="footer-address__link" href="mailto:info@my-suit.ru">info@my-suit.ru</a></p>
+                        </address>
+                        <ul class="socials socials--gold">
+                            <li class="socials-item">
+                                <a class="socials-item__link socials-item__link--facebook" href="#" aria-label="Ссылка на Facebook"></a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="socials-item__link socials-item__link--vk" href="#" aria-label="Ссылка на VK"></a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="socials-item__link socials-item__link--twitter" href="#" aria-label="Ссылка на Twitter"></a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="socials-item__link socials-item__link--google" href="#" aria-label="Ссылка на Google+"></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="footer-copyright">
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
                 <p class="footer-copyright__text">Copywrite Еtrusci, Ltd 2015-2016 All rihghts preserved</p>
             </div>
         </div>
