@@ -32,11 +32,20 @@
                             <option class="region-item" value="Москва" selected>Москва</option>
                         </select>
                     </form>
-                    <a class="header-person__phone" href="tel:+74992401001">+7 (499) 240-10-01</a>
-                    <a class="header-person__auth" href="#">Войти</a>
-                    <div class="header-person__backet backet">
-                        <a class="backet__link" href="#">Корзина</a>
-                        <span class="backet__count">| 3</span>
+                    <div class="header-person__links">
+                        <a class="header-person__phone" href="tel:+74992401001">+7 (499) 240-10-01</a>
+                        <a class="header-person__auth" href="#">Войти</a>
+                        <div class="header-person__backet backet">
+                            <a class="backet__link" href="#">Корзина</a>
+                            <span class="backet__count">| 3</span>
+                        </div>
+                    </div>
+                    <div class="header-person__links-mobile">
+                        <a class="header-person__phone" href="tel:+74992401001">+7 (499) 240-10-01</a>
+                        <a class="header-person__auth" href="#" aria-label="Авторизация"></a>
+                        <div class="header-person__backet backet">
+                            <a class="backet__link" href="#" aria-label="Корзина"></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,6 +56,7 @@
                     <a class="header-nav__logo" href="#" aria-label="Ссылка на главную страницу">
                         <img src="images/logo.png" alt="Логотип">
                     </a>
+                    <button class="header-nav__button" type="button" aria-label="Открыть меню"></button>
                     <nav class="header-nav__menu header-menu">
                         <a class="header-menu__link active">Пошив одежды</a>
                         <a class="header-menu__link" href="#">Интернет магазин</a>
@@ -71,7 +81,9 @@
                             Стиль - Вопрос Индивидуальности.
                         </p>
                     </div>
-                    <img src="images/main-img.png" alt="Мужчина в пиджаке">
+                    <div class="hero__img">
+                        <img src="images/main-img.png" alt="Мужчина в пиджаке" height="439" weight="376">
+                    </div>
                 </div>
             </div>
         </section>

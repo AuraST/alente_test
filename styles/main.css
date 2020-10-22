@@ -1,13 +1,13 @@
 /* Хэдер */
 .region-list {
-    width: fit-content;
-    padding: 0 25px;
+    padding: 3px 23px;
     border: none;
+    font-size: 1.071rem;
     font-weight: 700;
     text-decoration: underline;
     background-image: var(--icon-location), var(--icon-arrow);
     background-repeat: no-repeat, no-repeat;
-    background-position-x: 5px, 93%;
+    background-position-x: 0, 93%;
     background-position-y: center, center;
     background-size: 16px, 9px;
 }
@@ -19,6 +19,17 @@
     justify-content: space-between;
     padding: 10px 0;
     font-family: "ProximaNovaCond", sans-serif;
+}
+
+.header-person__links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-person__links-mobile {
+    display: none;
 }
 
 .header-person__socials {
@@ -70,11 +81,14 @@
     height: 15px;
     background-image: var(--icon-backet);
     background-repeat: no-repeat;
-    background-position-x: 10px;
+    background-position-x: 7px;
     background-position-y: center;
+    background-size: 16px;
 }
 
 .header-person__backet .backet__count {
+    font-family: "Georgia", serif;
+    font-style: italic;
     color: var(--color-default);
 }
 
@@ -107,6 +121,24 @@
 
 .header-menu .header-menu__link.active {
     border-bottom: 1px dashed var(--color-light);
+}
+
+.header-nav__button {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' height='512px' viewBox='0 -53 384 384' width='512px' class=''%3E%3Cg%3E%3Cpath d='m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23ffffff'/%3E%3Cpath d='m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23ffffff'/%3E%3Cpath d='m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    box-shadow: none;
+    z-index: 2;
+}
+
+.header-nav__button--close {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' height='512px' viewBox='0 0 311 311.07733' width='512px' class=''%3E%3Cg%3E%3Cpath d='m16.035156 311.078125c-4.097656 0-8.195312-1.558594-11.308594-4.695313-6.25-6.25-6.25-16.382812 0-22.632812l279.0625-279.0625c6.25-6.25 16.382813-6.25 22.632813 0s6.25 16.382812 0 22.636719l-279.058594 279.058593c-3.136719 3.117188-7.234375 4.695313-11.328125 4.695313zm0 0' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%235584ff'/%3E%3Cpath d='m295.117188 311.078125c-4.097657 0-8.191407-1.558594-11.308594-4.695313l-279.082032-279.058593c-6.25-6.253907-6.25-16.386719 0-22.636719s16.382813-6.25 22.636719 0l279.058594 279.0625c6.25 6.25 6.25 16.382812 0 22.632812-3.136719 3.117188-7.230469 4.695313-11.304687 4.695313zm0 0' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%235584ff'/%3E%3C/g%3E%3C/svg%3E%0A")
 }
 
 /* Блок с баннером */
@@ -159,6 +191,10 @@
     font-size: 3.429rem;
 }
 
+.hero__img {
+    display: flex;
+}
+
 /* Блок со списком статей */
 .blog {
     margin-bottom: 15px;
@@ -190,8 +226,9 @@
 
 .blog-articles {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 328px);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 328px));
     grid-gap: 8px;
+    justify-content: center;
 }
 
 .article {
@@ -288,7 +325,7 @@
     background-color: var(--color-white);
 }
 
-/* Блок описанием сроков*/
+/* Блок с описанием сроков*/
 .tailoring {
     padding: 85px 0;
     background-color: var(--color-default);
