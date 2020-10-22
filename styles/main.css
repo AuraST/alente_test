@@ -218,6 +218,7 @@
     cursor: pointer;
 }
 
+.blog-filter  input:focus ~.category__name,
 .blog-filter  input:checked ~.category__name,
 .blog-filter .category__name:hover {
     color: var(--color-default);
@@ -499,6 +500,11 @@
     background-position-x: 10px, 93%;
     background-position-y: center, center;
     background-size: 16px, 9px;
+}
+
+.form-fitting__input:focus,
+.form-fitting__select:focus {
+    outline-color: var(--color-default);
 }
 
 .form-fitting__input::placeholder,
